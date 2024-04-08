@@ -7,6 +7,27 @@
       "category": "a category",
       "description": "a description",
       "price": 100
+    },
+    {
+      "id": "2",
+      "name": "a title",
+      "category": "a category",
+      "description": "a description",
+      "price": 100
+    },
+    {
+      "id": "3",
+      "name": "a title",
+      "category": "a category",
+      "description": "a description",
+      "price": 100
+    },
+    {
+      "id": "4",
+      "name": "a title",
+      "category": "a category",
+      "description": "a description",
+      "price": 100
     }
   ]
 }
