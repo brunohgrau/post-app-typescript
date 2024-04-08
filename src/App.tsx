@@ -27,7 +27,7 @@ export const App: FunctionComponent = () => {
       .unwrap()
       .then((id) => {
         dispatch(resetSelections());
-        navigate("/summary/${id}");
+        navigate(`/summary/${id}`);
       });
   };
 
