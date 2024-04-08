@@ -1,0 +1,12 @@
+{
+  "orders": [],
+  "products": [
+    {
+      "id": "1",
+      "name": "a title",
+      "category": "a category",
+      "description": "a description",
+      "price": 100
+    }
+  ]
+}
