@@ -19,8 +19,11 @@ const productSelectionSlice = createSlice({
         action.payload[1]
       );
     },
+    resetSelections(selections: ProductSelection[]) {
+      selections.length = 0;
+    },
   },
 });
 
 export const reducer = productSelectionSlice.reducer;
-export const { addToOrder } = productSelectionSlice.actions;
+export const { addToOrder, resetSelections } = productSelectionSlice.actions;
