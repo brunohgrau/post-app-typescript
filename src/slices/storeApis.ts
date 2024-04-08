@@ -1,10 +1,6 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import { Product } from "../data/entities";
 
-const protocol = "http";
-const hostname = "localhost";
-const port = 4600;
-
 const baseUrl = "http://localhost:4600";
 
 export const productsApi = createApi({

@@ -1,5 +1,6 @@
 import React, { FunctionComponent } from "react";
 import { ProductSelection, ProductSelectionHelpers } from "../data/entities";
+import { NavLink } from "react-router-dom";
 
 interface Props {
   selections: ProductSelection[];

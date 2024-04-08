@@ -2,23 +2,7 @@ import React, { FunctionComponent, useMemo } from "react";
 import { Product } from "./data/entities";
 import { ProductList } from "./components/ProductList";
 import { useAppDispatch, useAppSelector, reducers, queries } from "./dataStore";
-
-let testData: Product[] = [
-  {
-    id: 1,
-    name: "a title",
-    category: "cosmetic",
-    description: "a description",
-    price: 100,
-  },
-  {
-    id: 2,
-    name: "a title",
-    category: "sports",
-    description: "a description",
-    price: 9100,
-  },
-];
+import { Routes, Route, Navigate } from "react-router-dom";
 
 export const App: FunctionComponent = () => {
   const selections = useAppSelector((state) => state.selections);
@@ -35,12 +19,20 @@ export const App: FunctionComponent = () => {
 
   return (
     <div className="App">
-      <ProductList
-        products={data ?? []}
-        categories={categories}
-        selections={selections}
-        addToOrder={addToOrder}
-      />
+      <Routes>
+        <Route
+          path="/products"
+          element={
+            <ProductList
+              products={data ?? []}
+              categories={categories}
+              selections={selections}
+              addToOrder={addToOrder}
+            />
+          }
+        />
+        <Route path="/" element={<Navigate replace to="/products" />} />
+      </Routes>
     </div>
   );
 };

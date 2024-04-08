@@ -3,15 +3,15 @@
   "products": [
     {
       "id": "1",
-      "name": "a title",
-      "category": "a category",
+      "name": "Kayak",
+      "category": "cosmetics",
       "description": "a description",
       "price": 100
     },
     {
       "id": "2",
-      "name": "a title",
-      "category": "a category",
+      "name": "Ball",
+      "category": "sports",
       "description": "a description",
       "price": 100
     },
