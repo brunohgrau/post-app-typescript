@@ -6,13 +6,22 @@ import {
 } from "./data/entities";
 import { ProductList } from "./components/ProductList";
 
-let testData: Product[] = [1, 2, 3, 4, 5].map((num) => ({
-  id: num,
-  name: "Prod${num}",
-  category: "Cat${num % 2}",
-  description: "Product ${num}",
-  price: 100,
-}));
+let testData: Product[] = [
+  {
+    id: 1,
+    name: "a title",
+    category: "cosmetic",
+    description: "a description",
+    price: 100,
+  },
+  {
+    id: 2,
+    name: "a title",
+    category: "sports",
+    description: "a description",
+    price: 9100,
+  },
+];
 
 export const App: FunctionComponent = () => {
   const [selections, setSelections] = useState(Array<ProductSelection>());
