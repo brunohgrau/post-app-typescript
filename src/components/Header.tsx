@@ -13,7 +13,7 @@ export const Header: FunctionComponent<Props> = (props) => {
     <div className="p-1 bg-secondary text-white text-end">
       {count === 0
         ? "(No Selection)"
-        : "${ count } product(s), " + "$${ total.toFixed(2)}"}
+        : `${count} item(s) selected for a total of $${total}`}
       {count > 0 ? (
         <NavLink to="/order" className="btn btn-sm btn-primary m-1">
           Submit Order
